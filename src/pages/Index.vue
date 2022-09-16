@@ -3,17 +3,6 @@
     src="https://img.pikbest.com/background/20180830/seaside-playing-cartoon-cute-background-design_2746045.jpg!c1024wm0">
   <div class="absolute-top text-center">
     <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
     <h2>ฝึกอ่านออกเสียง</h2>
   </div>
   <div class="fixed-center full-width">
