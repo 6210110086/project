@@ -13,7 +13,7 @@
         <source src="~assets/audios/เสียงข.mp3" type="audio/mpeg">
       </audio>
       <img
-        src="~assets/images/ข.jpg">
+        src="~assets/images/ไข่.png">
 
       <img src="~assets/images/ไข่ไก่.png">
     </div>
@@ -21,6 +21,9 @@
   </div>
 
   <div class="q-gutter-md row">
-      <q-btn color="primary"  class="absolute-bottom-right" label="BACK" @click="$router.replace('/')"/></div>
+      <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/')"/></div>
 
+<div class="q-gutter-md row">
+    <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/E')" />
+  </div>
 </template>

@@ -4,8 +4,13 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') },
-      { path: 'aboutme', component: () => import('pages/AboutMe.vue') }
+      // {},
+      { path: 'Home', component: () => import('pages/Home.vue') },
+      { path: '', component: () => import('pages/Mode.vue') },
+      { path: 'aboutme', component: () => import('pages/AboutMe.vue') },
+      { path: 'E', component: () => import('pages/E.vue') },
+      { path: 'Kai', component: () => import('pages/kai.vue') },
+      { path: 'Consonant', component: () => import('pages/Consonant.vue') }
     ]
   },
 
