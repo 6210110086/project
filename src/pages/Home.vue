@@ -7,24 +7,24 @@
     <div class="space-between">
     <div class="q-pa-md q-gutter-sm">
     <q-btn color="orange-5" size="100px">
-      <div class="ellipsis" @click="$router.replace('/Consonant')">
+      <div class="Home-screen" @click="$router.replace('/Consonant')">
         ก
         <br>
-        พยัญชนะไทย
+        <h2>พยัญชนะไทย</h2>
       </div>
     </q-btn>
     <q-btn color="orange-5" size="100px">
-      <div class="ellipsis" @click="$router.replace('/vowel_t')">
+      <div class="Home-screen" @click="$router.replace('/vowel')">
         -า
         <br>
-        สระ
+        <h2>สระ</h2>
       </div>
     </q-btn>
     <q-btn color="orange-5" size="100px">
-      <div class="ellipsis">
+      <div class="Home-screen">
         ก-า
         <br>
-        ประสมพยัญชนะกับสระ
+        <h3>ประสมพยัญชนะกับสระ</h3>
       </div>
     </q-btn>
   </div>

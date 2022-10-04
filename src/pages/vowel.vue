@@ -7,33 +7,43 @@
     <div class="space-between">
     <div class="q-pa-md q-gutter-sm">
     <q-btn color="orange-5" size="100px">
-      <div class="ellipsis" @click="$router.replace('/vowel_t')">
+      <div class="button-screen" @click="$router.replace('/vowel_t')">
         -ะ
       </div>
     </q-btn>
-    <q-btn color="orange-5" size="100px" @click="$router.replace('/AboutMe')">
-      <div class="ellipsis">
+    <q-btn color="orange-5" size="100px" @click="$router.replace('/vowel_k')">
+      <div class="button-screen">
         -า
       </div>
     </q-btn>
-    <q-btn color="orange-5" size="100px" @click="$router.replace('/E')">
-      <div class="ellipsis">
+    <q-btn color="orange-5" size="100px" @click="$router.replace('/vowel_b')">
+      <div class="button-screen">
         -ิ
       </div>
     </q-btn>
-    <q-btn color="orange-5" size="100px" @click="$router.replace('/D')">
-      <div class="ellipsis">
+    <q-btn color="orange-5" size="100px" @click="$router.replace('/vowel_u')">
+      <div class="button-screen">
         -ี
       </div>
     </q-btn>
-    <q-btn color="orange-5" size="100px" @click="$router.replace('/D')">
-      <div class="ellipsis">
+    <q-btn color="orange-5" size="100px" @click="$router.replace('/vowel_7')">
+      <div class="button-screen">
         -ึ
       </div>
     </q-btn>
-    <q-btn color="orange-5" size="100px" @click="$router.replace('/D')">
-      <div class="ellipsis">
+    <q-btn color="orange-5" size="100px" @click="$router.replace('/vowel_n')">
+      <div class="button-screen">
         -ื
+      </div>
+    </q-btn>
+    <q-btn color="orange-5" size="100px" @click="$router.replace('/vowel_6')">
+      <div class="button-screen">
+        -ุ
+      </div>
+    </q-btn>
+    <q-btn color="orange-5" size="100px" @click="$router.replace('/vowel_^')">
+      <div class="button-screen">
+        -ู
       </div>
     </q-btn>
   </div>

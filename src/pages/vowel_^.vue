@@ -19,10 +19,10 @@
   </div>
 
   <div class="q-gutter-md row">
-      <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/vowel_u')"/></div>
+      <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/vowel_6')"/></div>
 
   <div class="q-gutter-md row">
-    <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/vowel_t')" />
+    <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/vowel')" />
   </div>
 
 </template>

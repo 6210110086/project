@@ -10,19 +10,19 @@
     <div class="space-between">
 
       <audio controls>
-        <source src="~assets/audios/สระอุ.mp3" type="audio/mpeg">
+        <source src="~assets/audios/สระอื.mp3" type="audio/mpeg">
       </audio>
       <img
-        src="~assets/vowel/สระอุ.jpg">
+        src="~assets/vowel/สระอื.jpg">
       <!-- <img src="~assets/images/ฏ.jpg"> -->
     </div>
   </div>
 
   <div class="q-gutter-md row">
-      <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/vowel_u')"/></div>
+      <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/vowel_7')"/></div>
 
   <div class="q-gutter-md row">
-    <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/vowel_^')" />
+    <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/vowel_6')" />
   </div>
 
 </template>

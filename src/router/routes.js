@@ -20,7 +20,10 @@ const routes = [
       { path: 'vowel_b', component: () => import('pages/vowel_b.vue') },
       { path: 'vowel_u', component: () => import('pages/vowel_u.vue') },
       { path: 'vowel_6', component: () => import('pages/vowel_6.vue') },
-      { path: 'vowel_^', component: () => import('pages/vowel_^.vue') }
+      { path: 'vowel_^', component: () => import('pages/vowel_^.vue') },
+      { path: 'vowel', component: () => import('pages/vowel.vue') },
+      { path: 'vowel_7', component: () => import('pages/vowel_7.vue') },
+      { path: 'vowel_n', component: () => import('pages/vowel_n.vue') }
     ]
   },
 

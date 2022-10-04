@@ -22,7 +22,7 @@
       <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/vowel_b')"/></div>
 
   <div class="q-gutter-md row">
-    <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/vowel_6')" />
+    <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/vowel_7')" />
   </div>
 
 </template>
