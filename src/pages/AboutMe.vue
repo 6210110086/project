@@ -21,7 +21,7 @@
   </div>
 
   <div class="q-gutter-md row">
-      <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/')"/></div>
+      <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/Kai')"/></div>
 
 <div class="q-gutter-md row">
     <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/E')" />

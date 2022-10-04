@@ -10,12 +10,12 @@
     <div class="space-between">
 
       <audio controls>
-        <source src="~assets/audios/เสียงฎ.mp3" type="audio/mpeg">
+        <source src="~assets/audios/เสียงฏ.mp3" type="audio/mpeg">
       </audio>
       <img
         src="~assets/images/ฎ.jpg">
 
-      <img src="~assets/images/ฎ.webp">
+      <img src="~assets/images/ฏ.jpg">
     </div>
   </div>
 

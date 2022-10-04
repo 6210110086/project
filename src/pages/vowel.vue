@@ -3,27 +3,37 @@
     src="https://img.pikbest.com/background/20180830/seaside-playing-cartoon-cute-background-design_2746045.jpg!c1024wm0">
   <div class="absolute-top text-center">
     <br />
-    <h2>พยัณชนะ</h2>
+    <h2>สระ</h2>
     <div class="space-between">
     <div class="q-pa-md q-gutter-sm">
     <q-btn color="orange-5" size="100px">
-      <div class="ellipsis" @click="$router.replace('/Kai')">
-        ก
+      <div class="ellipsis" @click="$router.replace('/vowel_t')">
+        -ะ
       </div>
     </q-btn>
     <q-btn color="orange-5" size="100px" @click="$router.replace('/AboutMe')">
       <div class="ellipsis">
-        ข
+        -า
       </div>
     </q-btn>
     <q-btn color="orange-5" size="100px" @click="$router.replace('/E')">
       <div class="ellipsis">
-        ฎ
+        -ิ
       </div>
     </q-btn>
     <q-btn color="orange-5" size="100px" @click="$router.replace('/D')">
       <div class="ellipsis">
-        ฏ
+        -ี
+      </div>
+    </q-btn>
+    <q-btn color="orange-5" size="100px" @click="$router.replace('/D')">
+      <div class="ellipsis">
+        -ึ
+      </div>
+    </q-btn>
+    <q-btn color="orange-5" size="100px" @click="$router.replace('/D')">
+      <div class="ellipsis">
+        -ื
       </div>
     </q-btn>
   </div>

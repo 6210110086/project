@@ -1,31 +1,29 @@
 <template>
   <img class="full-screen"
-    src="https://img.pikbest.com/background/20180830/seaside-playing-cartoon-cute-background-design_2746045.jpg!c1024wm0">
+    src="~assets/images/bink.jpg">
   <div class="absolute-top text-center">
     <br />
     <h2>MOED</h2>
     <div class="space-between">
     <div class="q-pa-md q-gutter-sm">
-    <q-btn color="primary" size="100px" @click="$router.replace('/Home')">
-      <div class="ellipsis">
+    <q-btn color="orange-6" size="100px" @click="$router.replace('/Home')">
+      <div>
+        <q-icon name="book"></q-icon>
+        <br>
         การเรียนรู้
       </div>
     </q-btn>
 
     <q-btn color="primary" size="100px">
       <div class="ellipsis">
+        <q-icon name="book"></q-icon>
+        <br>
         เกมวัดผล
       </div>
     </q-btn>
   </div>
       </div>
     </div>
-    <div class="q-gutter-md row">
-      <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/')" />
-    </div>
-
-    <!-- <div class="q-gutter-md row">
-      <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/mode')"/></div> -->
 </template>
 
 <script>

@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated class="bg-purple">
+    <q-header elevated class="bg-secondary">
       <q-toolbar>
         <q-btn
           flat
@@ -15,7 +15,7 @@
           Thai VARK
         </q-toolbar-title>
 
-        <q-btn flat round dense icon="home" color="lime-4" />
+        <q-btn flat round dense icon="home" color="grey-1" @click="$router.replace('/')"/>
       </q-toolbar>
     </q-header>
 

@@ -6,21 +6,21 @@
     <h2>บทเรียน</h2>
     <div class="space-between">
     <div class="q-pa-md q-gutter-sm">
-    <q-btn color="primary" size="100px">
+    <q-btn color="orange-5" size="100px">
       <div class="ellipsis" @click="$router.replace('/Consonant')">
         ก
         <br>
         พยัญชนะไทย
       </div>
     </q-btn>
-    <q-btn color="primary" size="100px">
-      <div class="ellipsis">
+    <q-btn color="orange-5" size="100px">
+      <div class="ellipsis" @click="$router.replace('/vowel_t')">
         -า
         <br>
         สระ
       </div>
     </q-btn>
-    <q-btn color="primary" size="100px">
+    <q-btn color="orange-5" size="100px">
       <div class="ellipsis">
         ก-า
         <br>
@@ -35,7 +35,7 @@
     </div> -->
 
     <div class="q-gutter-md row">
-      <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/')"/></div>
+      <q-btn color="primary"  size="xl" class="absolute-bottom-left" label="BACK" @click="$router.replace('/')"/></div>
 
 </template>
 
