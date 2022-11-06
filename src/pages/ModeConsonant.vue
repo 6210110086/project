@@ -16,14 +16,14 @@
     <br>
     <div class="space-between">
     <div class="q-pa-md q-gutter-sm">
-    <q-btn class="consonant-screen"  color="orange-5" label="ก  ภ  ถ  ฎ  ฏ" size="100px" @click="$router.replace('/ModeCon')">
-      <!-- <div>
-        กภถฎฏ
-      </div> -->
+      <q-btn class="absolute-bottom-right" color="orange-5" label="ก ภ ถ ฎ ฏ" size="30px">
     </q-btn><br>
-    <q-btn class="consonant-screen" color="orange-5" size="100px" @click="$router.replace('/ModeCon2')">
+
+    <q-btn class="modeconsonant-screen"  color="orange-5" label="ฝึกอ่านออกเสียงพยัญชนะ" size="90px" @click="$router.replace('/Kai')">
+    </q-btn><br>
+    <q-btn class="modeconsonant-screen" color="orange-5" size="90px" @click="$router.replace('/AboutMe')">
       <div>
-        ข ฃ ช ซ
+        ฝึกเขียนพยัญชนะ
       </div>
     </q-btn>
   </div>
@@ -34,7 +34,7 @@
     </div> -->
 
     <div class="q-gutter-md row">
-      <q-btn color="primary"  size="xl" class="absolute-bottom-left" label="BACK" @click="$router.replace('/Home')"/></div>
+      <q-btn color="primary"  size="xl" class="absolute-bottom-left" label="BACK" @click="$router.replace('/Consonant')"/></div>
 
 </template>
 

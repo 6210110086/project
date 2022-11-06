@@ -1,22 +1,39 @@
 <template>
-  <img class="full-screen"
-    src="~assets/images/bink.jpg">
+  <img class="mode-screen"
+    src="~assets/images/หมวดหมู่การเรียนรู้.jpg">
   <div class="absolute-top text-center">
-    <br />
-    <h2>MOED</h2>
+    <br>
+    <br>
+     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+     <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <div class="space-between">
     <div class="q-pa-md q-gutter-sm">
-    <q-btn color="orange-6" size="100px" @click="$router.replace('/Home')">
+    <q-btn color="orange-6" size="60px" @click="$router.replace('/Home')">
       <div>
         <q-icon name="book"></q-icon>
         <br>
         การเรียนรู้
       </div>
     </q-btn>
-
-    <q-btn color="primary" size="100px">
-      <div class="ellipsis">
-        <q-icon name="book"></q-icon>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <q-btn color="primary" size="60px">
+      <div>
+        <q-icon name="font_download"></q-icon>
         <br>
         เกมวัดผล
       </div>

@@ -1,10 +1,8 @@
 <template>
-  <img class="full-screen"
-    src="https://img.pikbest.com/background/20180830/seaside-playing-cartoon-cute-background-design_2746045.jpg!c1024wm0">
+  <img class="vowel-screen"
+    src="~assets/images/ฝึกอ่านออกเสียง.jpg">
   <div class="absolute-top text-center">
-     <br />
-    <br />
-    <h2>ฝึกอ่านออกเสียง</h2>
+     <br>
   </div>
   <div class="fixed-center full-width">
     <div class="space-between">
@@ -14,7 +12,6 @@
       </audio>
       <img
         src="~assets/vowel/สระอิ.jpg">
-      <!-- <img src="~assets/images/ฏ.jpg"> -->
     </div>
   </div>
 

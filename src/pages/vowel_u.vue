@@ -1,10 +1,9 @@
 <template>
-  <img class="full-screen"
-    src="https://img.pikbest.com/background/20180830/seaside-playing-cartoon-cute-background-design_2746045.jpg!c1024wm0">
+  <img class="vowel-screen"
+    src="~assets/images/ฝึกอ่านออกเสียง.jpg">
   <div class="absolute-top text-center">
-     <br />
-    <br />
-    <h2>ฝึกอ่านออกเสียง</h2>
+     <br>
+    <br>
   </div>
   <div class="fixed-center full-width">
     <div class="space-between">
@@ -19,10 +18,10 @@
   </div>
 
   <div class="q-gutter-md row">
-      <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/vowel_b')"/></div>
+      <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/vowel_k')"/></div>
 
   <div class="q-gutter-md row">
-    <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/vowel_7')" />
+    <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/vowel_n')" />
   </div>
 
 </template>

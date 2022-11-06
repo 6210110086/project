@@ -1,10 +1,9 @@
 <template>
-  <img class="full-screen"
-    src="https://img.pikbest.com/background/20180830/seaside-playing-cartoon-cute-background-design_2746045.jpg!c1024wm0">
+  <img class="void-screen"
+    src="~assets/images/ฝึกอ่านออกเสียง.jpg">
   <div class="absolute-top text-center">
      <br />
     <br />
-    <h2>ฝึกอ่านออกเสียง</h2>
   </div>
   <div class="fixed-center full-width">
     <div class="space-between">
@@ -13,13 +12,15 @@
         <source src="~assets/audios/เสียงฏ.mp3" type="audio/mpeg">
       </audio>
       <img
-        src="~assets/images/ฎ.jpg">
+        src="~assets/images/ฏ.jpg">
 
-      <img src="~assets/images/ฏ.jpg">
+      <img src="~assets/images/ปฏัก.jpg">
     </div>
   </div>
-
   <div class="q-gutter-md row">
-      <q-btn color="primary"  class="absolute-bottom-right" label="BACK" @click="$router.replace('/Consonant')"/></div>
+    <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/Consonant')" />
+  </div>
+  <div class="q-gutter-md row">
+      <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/E')"/></div>
 
 </template>
