@@ -31,6 +31,7 @@ const routes = [
       { path: '5', component: () => import('pages/5.vue') },
       { path: 'ฃ', component: () => import('pages/quack.vue') },
       { path: 'ช', component: () => import('pages/=.vue') },
+      { path: 'ซ', component: () => import('pages/sauzo.vue') },
       { path: 'ModeCon2', component: () => import('pages/ModeCon2.vue') }
     ]
   },

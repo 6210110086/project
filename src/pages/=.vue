@@ -14,7 +14,7 @@
       <img
         src="~assets/images/ช.jpg">
 
-      <img src="~assets/images/ไข่ไก่.png">
+      <img src="~assets/images/ช้าง.jpg">
     </div>
 
   </div>
