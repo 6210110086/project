@@ -16,12 +16,12 @@
     <br>
     <div class="space-between">
     <div class="q-pa-md q-gutter-sm">
-    <q-btn color="orange-5" size="100px" @click="$router.replace('/vowel_k')">
+    <q-btn color="orange-5" size="100px" @click="$router.replace('/Modevowel')">
       <div class="button-screen">
         สระเสียงยาว
       </div>
     </q-btn><br>
-    <q-btn color="orange-5" size="100px" @click="$router.replace('/vowel_b')">
+    <q-btn color="orange-5" size="100px" @click="$router.replace('/vowel_t')">
       <div class="button-screen">
         สระเสียงสั้น
       </div>

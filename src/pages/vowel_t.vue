@@ -13,15 +13,14 @@
       </audio>
       <img
         src="~assets/vowel/สระอะ.jpg">
-      <!-- <img src="~assets/images/ฏ.jpg"> -->
     </div>
   </div>
 
   <div class="q-gutter-md row">
-      <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/Home')"/></div>
+      <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/vowel')"/></div>
 
       <div class="q-gutter-md row">
-    <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/vowel_k')" />
+    <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/vowel_6')" />
   </div>
 
 </template>
