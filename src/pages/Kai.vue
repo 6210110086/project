@@ -8,7 +8,7 @@
   <div class="fixed-center full-width">
     <div class="space-between">
       <audio controls>
-        <source src="~assets/audios/เสียงก.mp3" type="audio/mpeg">
+        <source src="~assets/audios/ก.mp3" type="audio/mpeg">
       </audio>
 
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAj3nG-13VNusUdB_YIrnbvPcsz56gV5rGPGxCnZOf4JbfdMmgqm5feCwD4VAI9Qk29m0&usqp=CAU">

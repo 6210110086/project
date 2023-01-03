@@ -9,7 +9,7 @@
     <div class="space-between">
 
       <audio controls>
-        <source src="~assets/audios/เสียงช.mp3" type="audio/mpeg">
+        <source src="~assets/audios/ช.mp3" type="audio/mpeg">
       </audio>
       <img
         src="~assets/images/ช.jpg">

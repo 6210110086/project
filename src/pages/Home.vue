@@ -21,7 +21,7 @@
       <br>
       <br>
     <q-btn color="orange-5" size="100px">
-      <div class="Home-screen" @click="$router.replace('/Consonant')">
+      <div class="Home-screen" @click="$router.replace('/ModeCon')">
         ก
         <br>
         <h2>พยัญชนะไทย</h2>

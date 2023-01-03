@@ -9,7 +9,7 @@
     <div class="space-between">
 
       <audio controls>
-        <source src="~assets/audios/สระอุ.mp3" type="audio/mpeg">
+        <source src="~assets/audios/short_sound/อุ.mp3" type="audio/mpeg">
       </audio>
       <img
         src="~assets/vowel/สระอุ.jpg">

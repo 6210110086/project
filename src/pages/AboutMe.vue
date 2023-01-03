@@ -9,7 +9,7 @@
     <div class="space-between">
 
       <audio controls>
-        <source src="~assets/audios/เสียงข.mp3" type="audio/mpeg">
+        <source src="~assets/audios/ข.mp3" type="audio/mpeg">
       </audio>
       <img
         src="~assets/images/ข.jpg">
@@ -20,7 +20,7 @@
   </div>
 
   <div class="q-gutter-md row">
-      <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/Modecon2')"/></div>
+      <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/Consonant')"/></div>
 
 <div class="q-gutter-md row">
     <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/ฃ')" />
