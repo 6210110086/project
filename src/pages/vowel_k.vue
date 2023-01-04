@@ -1,6 +1,6 @@
 <template>
   <img class="void-screen"
-    src="~assets/images/ฝึกอ่านออกเสียง.jpg">
+    src="~assets/images/กระดาน.jpg">
   <div class="absolute-top text-center">
      <br />
     <br />
@@ -11,8 +11,7 @@
       <audio controls>
         <source src="~assets/audios/long_sound/อา.mp3" type="audio/mpeg">
       </audio>
-      <img
-        src="~assets/vowel/สระอา.jpg">
+      <img src="~assets/vowel/อา.png">
     </div>
   </div>
 

@@ -1,6 +1,6 @@
 <template>
   <img class="void-screen"
-    src="~assets/images/ฝึกอ่านออกเสียง.jpg">
+    src="~assets/images/กระดาน.jpg">
   <div class="absolute-top text-center">
      <br />
     <br />
@@ -12,9 +12,9 @@
         <source src="~assets/audios/ข.mp3" type="audio/mpeg">
       </audio>
       <img
-        src="~assets/images/ข.jpg">
+        src="~assets/images/ข.png">
 
-      <img src="~assets/images/ไข่ไก่.png">
+      <img src="~assets/images/ไข่.png">
     </div>
 
   </div>

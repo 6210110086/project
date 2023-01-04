@@ -7,13 +7,11 @@
   </div>
   <div class="fixed-center full-width">
     <div class="space-between">
-      <audio controls>
+      <div class="img-odo"><audio controls>
         <source src="~assets/audios/ก.mp3" type="audio/mpeg">
-      </audio>
-
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAj3nG-13VNusUdB_YIrnbvPcsz56gV5rGPGxCnZOf4JbfdMmgqm5feCwD4VAI9Qk29m0&usqp=CAU">
-
-        <img src="~assets/images/ไก่.jpg">
+      </audio></div>
+      <div class="img-kai1"><img src="~assets/images/ก.png"></div>
+      <div class="img-kai2"><img src="~assets/images/ไก่.jpg"></div>
     </div>
   </div>
   <div class="q-gutter-md row">
