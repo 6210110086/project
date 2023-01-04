@@ -28,14 +28,14 @@
       </div>
     </q-btn>
     <q-btn color="orange-5" size="100px">
-      <div class="Home-screen" @click="$router.replace('/vowel')">
+      <div class="Home-screen" @click="$router.replace('/Modevowel')">
         -า
         <br>
         <h2>สระ</h2>
       </div>
     </q-btn>
     <q-btn color="orange-5" size="100px">
-      <div class="Home-screen">
+      <div class="Home-screen" @click="$router.replace('/ขา')">
         ก-า
         <br>
         <h3>ประสมพยัญชนะกับสระ</h3>

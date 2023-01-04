@@ -33,6 +33,7 @@ const routes = [
       { path: 'ฃ', component: () => import('pages/quack.vue') },
       { path: 'ช', component: () => import('pages/=.vue') },
       { path: 'ซ', component: () => import('pages/sauzo.vue') },
+      { path: 'ขา', component: () => import('pages/Mix_Qa.vue') },
       { path: 'ModeCon2', component: () => import('pages/ModeCon2.vue') }
     ]
   },

@@ -16,7 +16,7 @@
     <br>
     <div class="space-between">
     <div class="q-pa-md q-gutter-sm">
-    <q-btn color="orange-5" size="100px" @click="$router.replace('/Modevowel')">
+    <q-btn color="orange-5" size="100px" @click="$router.replace('/vowel_k')">
       <div class="button-screen">
         สระเสียงยาว
       </div>
@@ -30,7 +30,7 @@
       </div>
     </div>
     <div class="q-gutter-md row">
-      <q-btn color="primary"  size="xl" class="absolute-bottom-left" label="BACK" @click="$router.replace('/Home')"/></div>
+      <q-btn color="primary"  size="xl" class="absolute-bottom-left" label="BACK" @click="$router.replace('/Modevowel')"/></div>
 
 </template>
 

@@ -1,19 +1,15 @@
 <template>
-  <!-- บรรทัดที่ 2-3 แสดงรูปพื้นหลังโดยจะดึงรูปจาก folder : assets->images->ฝึกอ่านออกเสียง.jpg -->
   <img class="void-screen"
     src="~assets/images/กระดาน.jpg">
   <div class="absolute-top text-center">
-    <br />
   </div>
   <div class="fixed-center full-width">
     <div class="space-between">
-      <audio controls>
+      <div class="img-odo"><audio controls>
         <source src="~assets/audios/ก.mp3" type="audio/mpeg">
-      </audio>
-
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAj3nG-13VNusUdB_YIrnbvPcsz56gV5rGPGxCnZOf4JbfdMmgqm5feCwD4VAI9Qk29m0&usqp=CAU">
-
-        <img src="~assets/images/ไก่.jpg">
+      </audio></div>
+      <div class="img-resize"><img src="~assets/Mix/ขา1.png"></div>
+      <div class="img-re"><img src="~assets/images/ขา.png"></div>
     </div>
   </div>
   <div class="q-gutter-md row">
