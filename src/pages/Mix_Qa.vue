@@ -6,7 +6,7 @@
   <div class="fixed-center full-width">
     <div class="space-between">
       <div class="img-odo"><audio controls>
-        <source src="~assets/audios/ก.mp3" type="audio/mpeg">
+        <source src="~assets/audios/ขา.mp3" type="audio/mpeg">
       </audio></div>
       <div class="img-resize"><img src="~assets/Mix/ขา1.png"></div>
       <div class="img-re"><img src="~assets/images/ขา.png"></div>

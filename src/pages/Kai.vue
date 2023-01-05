@@ -11,13 +11,14 @@
         <source src="~assets/audios/ก.mp3" type="audio/mpeg">
       </audio></div>
       <div class="img-kai1"><img src="~assets/images/ก.png"></div>
-      <div class="img-kai2"><img src="~assets/images/ไก่.jpg"></div>
+      <div class="img-kai2"><img src="~assets/images/ไก่เล็ก.png"></div>
     </div>
   </div>
   <div class="q-gutter-md row">
     <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/4')" />
   </div>
 
-  <div class="q-gutter-md row">
-      <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/ModeCon')"/></div>
+<div class="Back">
+  <!-- <div class="q-gutter-md row"> -->
+      <q-btn color="primary"  label="BACK" @click="$router.replace('/ModeCon')"/></div>
 </template>
