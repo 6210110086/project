@@ -38,7 +38,7 @@
       <div class="Home-screen" @click="$router.replace('/ขา')">
         ก-า
         <br>
-        <h3>ประสมพยัญชนะกับสระ</h3>
+        <h3>ผสมพยัญชนะกับสระ</h3>
       </div>
     </q-btn>
   </div>
