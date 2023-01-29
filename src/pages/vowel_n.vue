@@ -1,6 +1,6 @@
 <template>
   <img class="void-screen"
-    src="~assets/images/ฝึกอ่านออกเสียง.jpg">
+  src="~assets/images/กระดาน.jpg">
   <div class="absolute-top text-center">
      <br />
     <br />
@@ -12,15 +12,32 @@
         <source src="~assets/audios/long_sound/อื.mp3" type="audio/mpeg">
       </audio>
       <img
-        src="~assets/vowel/สระอื.jpg">
+        src="~assets/vowel/อื.png">
     </div>
   </div>
 
   <div class="q-gutter-md row">
-      <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/vowel_u')"/></div>
+      <q-btn color="primary" size="xl" class="absolute-bottom-left" label="BACK" @click="$router.replace('/vowel_u')"/></div>
 
   <div class="q-gutter-md row">
-    <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/vowel_^')" />
+    <q-btn color="primary" size="xl" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/vowel_^')" />
   </div>
 
 </template>
+
+<script>
+export default {
+  setup () {
+    return {
+      sizes: ['xs', 'sm', 'md', 'lg', 'xl', 'xl'],
+      icons: [
+        'navigation',
+        'add_a_photo',
+        'camera',
+        'camera_front',
+        'my_location'
+      ]
+    }
+  }
+}
+</script>

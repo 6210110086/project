@@ -5,8 +5,10 @@ const routes = [
     children: [
       // {},
       { path: 'Home', component: () => import('pages/Home.vue') },
-      // { path: '', component: () => import('pages/Login.vue') },
-      { path: '', component: () => import('pages/Mode.vue') },
+      { path: '', component: () => import('pages/Login.vue') },
+      { path: 'test', component: () => import('pages/test.vue') },
+      { path: 'about', component: () => import('pages/about.vue') },
+      // { path: '', component: () => import('pages/Mode.vue') },
       { path: 'ข', component: () => import('pages/AboutMe.vue') },
       { path: 'E', component: () => import('pages/E.vue') },
       { path: 'ก', component: () => import('pages/kai.vue') },

@@ -1,5 +1,5 @@
 <template>
-  <img class="vowel-screen" src="~assets/images/ฝึกอ่านออกเสียง.jpg">
+  <img class="vowel-screen" src="~assets/images/กระดาน.jpg">
   <div class="absolute-top text-center">
     <br />
     <br />
@@ -10,17 +10,33 @@
       <audio controls>
         <source src="~assets/audios/long_sound/อู.mp3" type="audio/mpeg">
       </audio>
-      <img src="~assets/vowel/สระอู.jpg">
-      <!-- <img src="~assets/images/ฏ.jpg"> -->
+      <img src="~assets/vowel/อู.png">
     </div>
   </div>
 
   <div class="q-gutter-md row">
-    <q-btn color="primary" class="absolute-bottom-left" label="BACK" @click="$router.replace('/vowel_n')" />
+    <q-btn color="primary" size="xl" class="absolute-bottom-left" label="BACK" @click="$router.replace('/vowel_n')" />
   </div>
 
   <div class="q-gutter-md row">
-    <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/vowel_g')" />
+    <q-btn color="primary" size="xl" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/vowel_g')" />
   </div>
 
 </template>
+
+<script>
+export default {
+  setup () {
+    return {
+      sizes: ['xs', 'sm', 'md', 'lg', 'xl', 'xl'],
+      icons: [
+        'navigation',
+        'add_a_photo',
+        'camera',
+        'camera_front',
+        'my_location'
+      ]
+    }
+  }
+}
+</script>

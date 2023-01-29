@@ -1,6 +1,6 @@
 <template>
   <img class="void-screen"
-    src="~assets/images/ฝึกอ่านออกเสียง.jpg">
+  src="~assets/images/กระดาน.jpg">
   <div class="absolute-top text-center">
      <br />
     <br />

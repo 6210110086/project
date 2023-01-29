@@ -21,14 +21,13 @@
 
     <q-drawer
       v-model="leftDrawerOpen"
-      show-if-above
       bordered
     >
-      <q-list>
+      <q-list bordered class="rounded-borders">
         <q-item-label
           header
         >
-          Essential Links
+          เมนู
         </q-item-label>
 
         <EssentialLink
@@ -50,46 +49,28 @@ import EssentialLink from 'components/EssentialLink.vue'
 
 const linksList = [
   {
-    title: 'Docs',
-    caption: 'quasar.dev',
-    icon: 'school',
-    link: 'https://quasar.dev'
+    title: 'หน้าหลัก',
+    caption: 'Home',
+    icon: 'home',
+    link: 'http://localhost:8080/#/'
   },
   {
-    title: 'Github',
-    caption: 'github.com/quasarframework',
-    icon: 'code',
-    link: 'https://github.com/quasarframework'
+    title: 'โหมดการเรียนรู้',
+    caption: 'Learning mode',
+    icon: 'book',
+    link: 'http://localhost:8080/#/Home'
   },
   {
-    title: 'Discord Chat Channel',
-    caption: 'chat.quasar.dev',
+    title: 'โหมดเกมวัดผล',
+    caption: 'Game mode',
     icon: 'chat',
     link: 'https://chat.quasar.dev'
   },
   {
-    title: 'Forum',
-    caption: 'forum.quasar.dev',
+    title: 'เกี่ยวกับ',
+    caption: 'AboutMe',
     icon: 'record_voice_over',
-    link: 'https://forum.quasar.dev'
-  },
-  {
-    title: 'Twitter',
-    caption: '@quasarframework',
-    icon: 'rss_feed',
-    link: 'https://twitter.quasar.dev'
-  },
-  {
-    title: 'Facebook',
-    caption: '@QuasarFramework',
-    icon: 'public',
-    link: 'https://facebook.quasar.dev'
-  },
-  {
-    title: 'Quasar Awesome',
-    caption: 'Community Quasar projects',
-    icon: 'favorite',
-    link: 'https://awesome.quasar.dev'
+    link: 'http://localhost:8080/#/about'
   }
 ]
 

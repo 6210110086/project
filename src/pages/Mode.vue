@@ -19,6 +19,7 @@
     <div class="space-between">
     <div class="q-pa-md q-gutter-sm">
     <q-btn color="orange-6" size="60px" @click="$router.replace('/Home')">
+    <!-- <q-btn color="orange-6" size="60px" @click="$router.replace('/test')"> -->
       <div>
         <q-icon name="book"></q-icon>
         <br>
@@ -31,7 +32,7 @@
     <br>
     <br>
     <br>
-    <q-btn color="primary" size="60px">
+    <q-btn color="primary" size="60px" @click="$router.replace('/about')">
       <div>
         <q-icon name="font_download"></q-icon>
         <br>

@@ -13,9 +13,26 @@
     </div>
   </div>
   <div class="q-gutter-md row">
-    <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/4')" />
+    <q-btn color="primary" size="xl" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/4')" />
   </div>
 
   <div class="q-gutter-md row">
-      <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/ModeCon')"/></div>
+      <q-btn color="primary" size="xl"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/ModeCon')"/></div>
 </template>
+
+<script>
+export default {
+  setup () {
+    return {
+      sizes: ['xs', 'sm', 'md', 'lg', 'xl', 'xl'],
+      icons: [
+        'navigation',
+        'add_a_photo',
+        'camera',
+        'camera_front',
+        'my_location'
+      ]
+    }
+  }
+}
+</script>
