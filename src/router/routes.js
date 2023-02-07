@@ -5,10 +5,10 @@ const routes = [
     children: [
       // {},
       { path: 'Home', component: () => import('pages/Home.vue') },
-      { path: '', component: () => import('pages/Login.vue') },
+      // { path: 'login', component: () => import('pages/Login.vue') },
       { path: 'test', component: () => import('pages/test.vue') },
       { path: 'about', component: () => import('pages/about.vue') },
-      // { path: '', component: () => import('pages/Mode.vue') },
+      { path: '', component: () => import('pages/Mode.vue') },
       { path: 'ข', component: () => import('pages/AboutMe.vue') },
       { path: 'E', component: () => import('pages/E.vue') },
       { path: 'ก', component: () => import('pages/kai.vue') },
@@ -28,6 +28,11 @@ const routes = [
       { path: 'vowel_gv', component: () => import('pages/vowel_gv.vue') },
       { path: 'vowel_f', component: () => import('pages/vowel_f.vue') },
       { path: 'vowel_v', component: () => import('pages/vowel_v.vue') },
+      { path: 'เอะ', component: () => import('pages/vowel_gt.vue') },
+      { path: 'โอะ', component: () => import('pages/vowel_ft.vue') },
+      { path: 'เอาะ', component: () => import('pages/vowel_gkt.vue') },
+      { path: 'แอะ', component: () => import('pages/vowel_ct.vue') },
+      { path: 'ไอ', component: () => import('pages/vowel_w.vue') },
       { path: 'ModeCon', component: () => import('pages/ModeConsonant.vue') },
       { path: 'Modevowel', component: () => import('pages/Modevowel.vue') },
       { path: '4', component: () => import('pages/4.vue') },
@@ -39,7 +44,11 @@ const routes = [
       { path: 'ModeCon2', component: () => import('pages/ModeCon2.vue') }
     ]
   },
-
+  {
+    name: 'LoginIn',
+    path: '/login',
+    component: () => import('pages/Login.vue')
+  },
   // Always leave this as last one,
   // but you can also remove it
   {

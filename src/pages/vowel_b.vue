@@ -1,6 +1,6 @@
 <template>
   <img class="vowel-screen"
-    src="~assets/images/ฝึกอ่านออกเสียง.jpg">
+  src="~assets/images/กระดาน.jpg">
   <div class="absolute-top text-center">
      <br>
   </div>
@@ -16,10 +16,27 @@
   </div>
 
   <div class="q-gutter-md row">
-      <q-btn color="primary"  class="absolute-bottom-left" label="BACK" @click="$router.replace('/vowel_6')"/></div>
+      <q-btn color="primary" size="xl" class="absolute-bottom-left" label="BACK" @click="$router.replace('/vowel_6')"/></div>
 
   <div class="q-gutter-md row">
-    <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/vowel_7')" />
+    <q-btn color="primary" size="xl" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/vowel_7')" />
   </div>
 
 </template>
+
+<script>
+export default {
+  setup () {
+    return {
+      sizes: ['xs', 'sm', 'md', 'lg', 'xl', 'xl'],
+      icons: [
+        'navigation',
+        'add_a_photo',
+        'camera',
+        'camera_front',
+        'my_location'
+      ]
+    }
+  }
+}
+</script>

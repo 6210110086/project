@@ -69,7 +69,7 @@ export default {
       } else {
         try {
           await this.doLogin(this.login)
-          const toPath = this.$route.query.to || '/admin'
+          const toPath = this.$route.query.to || '/'
           this.$router.push(toPath)
         } catch (err) {
           if (err.response.data.detail) {
