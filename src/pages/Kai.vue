@@ -13,11 +13,12 @@
       <div class="img-kai2"><img src="~assets/images/ไก่เล็ก.png"></div>
     </div>
   </div>
+ <router-link to="/4">
   <div class="q-gutter-md row">
-    <q-btn color="primary" size="xl" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/4')" />
-  </div>
-  <div class="q-gutter-md row">
-      <q-btn color="primary" size="xl" class="absolute-bottom-left" label="BACK" @click="$router.replace('/Consonant')"/></div>
+    <q-btn color="primary" size="xl" label="NEXT" class="absolute-bottom-right"/></div></router-link>
+  <router-link to="/Consonant">
+    <div class="q-gutter-md row">
+      <q-btn color="primary" size="xl" class="absolute-bottom-left" label="BACK"/></div></router-link>
 </template>
 
 <script>

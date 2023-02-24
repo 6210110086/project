@@ -1,13 +1,13 @@
 import { api } from 'boot/axios'
 
-export const doLogin = async ({ commit, dispatch }, payload) => {
-  await api.post('/api/v1/jwt/create/', payload).then(response => {
-    const token = response.data
-    commit('setToken', token)
-    api.defaults.headers.common.Authorization = 'JWT ' + token.access
-    dispatch('getMe', token)
-  })
-}
+// export const doLogin = async ({ commit, dispatch }, payload) => {
+//   await api.post('/api/v1/jwt/create/', payload).then(response => {
+//     const token = response.data
+//     commit('setToken', token)
+//     api.defaults.headers.common.Authorization = 'JWT ' + token.access
+//     dispatch('getMe', token)
+//   })
+// }
 
 export const signOut = ({ commit }) => {
   api.defaults.headers.common.Authorization = ''

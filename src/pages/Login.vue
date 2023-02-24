@@ -1,5 +1,5 @@
 <template>
-  <img src="~assets/images/wave.png" class="wave" alt="login-wave">
+   <img src="~assets/images/wave.png" class="wave"  alt="login-wave">
   <div class="row" style="height: 90vh">
     <div class="col-0 col-md-6 flex justify-center content-center">
       <img src="~assets/images/wave4.png" class="responsive" alt="login-image">
@@ -11,7 +11,7 @@
           <q-avatar size="103px" class="absolute-center shadow-10">
             <img src="~assets/images/sun.jpg" alt="avatar">
           </q-avatar>
-        </q-card-section>
+        </q-card-section >
         <q-card-section>
           <div class="q-pt-lg">
             <div class="col text-h6 ellipsis flex justify-center">
@@ -28,8 +28,8 @@
             <div>
               <q-btn class="full-width" color="primary" label="เข้าสู่ระบบ" type="submit" rounded></q-btn>
               <div class="text-center q-mt-sm q-gutter-lg">
-                <router-link class="text-black" to="/login">ลืมรหัสผ่าน?</router-link>
-                <router-link class="text-black" to="/login">สร้างบัญชี</router-link>
+                <router-link class="text-dark" to="/login">ลืมรหัสผ่าน?</router-link>
+                <router-link class="text-dark" to="/login">สร้างบัญชี</router-link>
               </div>
             </div>
           </q-form>

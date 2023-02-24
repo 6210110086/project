@@ -66,6 +66,7 @@ div.c {
 .void-screen{
   width: 100%;
   height: 890px;
+  object-fit: cover;
 }
 
 .Home2-screen{
@@ -96,11 +97,12 @@ div.c {
   height: 400px;
 }
 .img-odo{
-  height: 0px;
+  width: 400px;
 }
 .img-kai2{
   width: 400px;
   height: 250px;
+  object-fit: cover;
 
 }
 .img-kai1{
@@ -126,4 +128,12 @@ div.c {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+.Back2{
+background: white;
+}
+.grid{
+  margin-bottom: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
 }
