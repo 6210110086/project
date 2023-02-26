@@ -1,11 +1,23 @@
 const routes = [
   {
+    path: '/login',
+    component: () => import('pages/Login.vue')
+    // path: 'Signup', component: () => import('pages/Signup.vue')
+
+  },
+  {
+    path: '/Signup',
+    component: () => import('pages/Signup.vue')
+
+  },
+  {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Mode.vue') },
       // { path: 'logintest', component: () => import('pages/logintest.vue') },
       { path: 'Home', component: () => import('pages/Home.vue') },
+      // { path: 'Signup', component: () => import('pages/Signup.vue') },
       { path: 'test', component: () => import('pages/test.vue') },
       { path: 'about', component: () => import('pages/about.vue') },
       { path: 'ข', component: () => import('pages/AboutMe.vue') },
@@ -43,11 +55,7 @@ const routes = [
       { path: 'ModeCon2', component: () => import('pages/ModeCon2.vue') }
     ]
   },
-  {
-    name: 'LoginIn',
-    path: '/login',
-    component: () => import('pages/Login.vue')
-  },
+
   // Always leave this as last one,
   // but you can also remove it
   {
