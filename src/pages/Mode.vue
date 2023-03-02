@@ -18,7 +18,6 @@
     <br>
     <div class="q-pa-md q-gutter-sm">
     <q-btn color="orange-6" size="60px" @click="$router.replace('/Home')">
-    <!-- <q-btn color="orange-6" size="60px" @click="$router.replace('/test')"> -->
       <div>
         <q-icon name="book"></q-icon><br>การเรียนรู้</div></q-btn>
     <q-btn color="primary" size="60px" @click="$router.replace('/about')">

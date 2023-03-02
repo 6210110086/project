@@ -20,7 +20,7 @@
         </q-card-section>
         <q-card-section>
           <!-- <form id="signup-form"> -->
-            <q-form class="q-gutter-md" @submit="onsubmit" @reset="onReset">
+            <!-- <q-form class="q-gutter-md" @submit="onsubmit" @reset="onReset"> -->
 
               <b-form-group id = "name" label="ชื่อ-นามสกุล" type="Text" v-model="form.name">
               <b-form-input
@@ -30,7 +30,8 @@
                 required>
               </b-form-input>
               </b-form-group >
-
+              <q-input id = "name" label="ชื่อ-นามสกุล" type="Text" v-model="form.name">
+              </q-input>
               <q-input label="ชั้นเรียน" type="Text" v-model="form.classuser">
               </q-input>
               <q-input label="ชื่อผู้ใช้" v-model="form.email">
@@ -45,7 +46,7 @@
                     @click="$router.replace('/login')">มีบัญชีอยู่แล้ว?</router-link>
                 </div>
               </div>
-            </q-form>
+            <!-- </q-form> -->
           <!-- </form> -->
         </q-card-section>
       </q-card>
@@ -56,10 +57,10 @@
 <script>
 // import { createObjectExpression } from "@vue/compiler-core";
 import {
-  getAuth,
-  createUserWithEmailAndPassword,
-  onAuthStateChanged,
-  updateProfile
+// getAuth,
+// createUserWithEmailAndPassword,
+// onAuthStateChanged
+// updateProfile
 } from 'firebase/auth'
 export default {
   data () {
@@ -72,32 +73,32 @@ export default {
       }
     }
   },
-  created () {
-    const auth = getAuth()
-    onAuthStateChanged(auth, (user) => {
-      if (user) {
-        this.$router.push('/').catch(() => {})
-      }
-    })
-  },
+  // created () {
+  //   const auth = getAuth()
+  //   onAuthStateChanged(auth, (user) => {
+  //     if (user) {
+  //       this.$router.push('/').catch(() => {})
+  //     }
+  //   })
+  // },
   methods: {
-    onsubmit (event) {
-      event.preventDefault()
-      const auth = getAuth()
-      createUserWithEmailAndPassword(auth, this.form.email, this.form.password)
-        .then(async (userCredential) => {
-          await updateProfile(userCredential.user, { displayName: this.form.name })
-          this.$route.push('/').catch(() => {})
-        })
-        .catch((error) => {
-          alert(error.message)
-        })
-    },
-    onReset (event) {
-      event.preventDefault()
-      this.form.email = ''
-      this.form.password = ''
-    }
+    // onsubmit (event) {
+    //   event.preventDefault()
+    //   const auth = getAuth()
+    //   createUserWithEmailAndPassword(auth, this.form.email, this.form.password)
+    //     .then(async (userCredential) => {
+    //       await updateProfile(userCredential.user, { displayName: this.form.name })
+    //       this.$route.push('/').catch(() => {})
+    //     })
+    //     .catch((error) => {
+    //       alert(error.message)
+    //     })
+    // },
+    // onReset (event) {
+    //   event.preventDefault()
+    //   this.form.email = ''
+    //   this.form.password = ''
+    // }
   }
 }
 </script>

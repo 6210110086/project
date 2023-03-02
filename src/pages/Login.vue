@@ -28,7 +28,6 @@
             <div>
               <q-btn class="full-width" color="primary" label="เข้าสู่ระบบ" type="submit" rounded></q-btn>
               <div class="text-center q-mt-sm q-gutter-lg">
-                <!-- <router-link class="text-dark" to="/login">ลืมรหัสผ่าน?</router-link> -->
                 <router-link class="text-dark" to="/login" @click="$router.replace('/signup')">สร้างบัญชี</router-link>
               </div>
             </div>
@@ -47,10 +46,7 @@ export default {
   name: 'Login',
   data () {
     return {
-      // login: {
-      //   username: 'Joabson',
-      //   password: 'a2d4g6j8'
-      // }
+
       email: '',
       password: ''
     }
