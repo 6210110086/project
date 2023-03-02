@@ -6,7 +6,7 @@ const routes = [
 
   },
   {
-    path: '/Signup',
+    path: '/signup',
     component: () => import('pages/Signup.vue')
 
   },

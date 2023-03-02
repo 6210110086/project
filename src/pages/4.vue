@@ -12,7 +12,7 @@
         <source src="~assets/audios/ภ.mp3" type="audio/mpeg">
       </audio>
       <img
-        src="~assets/images/ภ.jpg">
+        src="https://firebasestorage.googleapis.com/v0/b/vark-7ea53.appspot.com/o/images%2F%E0%B8%A0.png?alt=media&token=a6f1456c-1652-4618-ae3e-f97d840a949f">
 
       <img src="~assets/images/สำเภา.jpg">
     </div>

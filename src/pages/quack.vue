@@ -12,9 +12,9 @@
         <source src="~assets/audios/ฃ.mp3" type="audio/mpeg">
       </audio>
       <img
-        src="~assets/images/ฃ.jpg">
+        src="https://firebasestorage.googleapis.com/v0/b/vark-7ea53.appspot.com/o/images%2F%E0%B8%83.png?alt=media&token=2ccc1250-ec3d-4cb7-847f-e0d097b016e1">
 
-      <img src="~assets/images/ขวด.jpg">
+      <img src="~assets/images/ขวด.png">
     </div>
 
   </div>

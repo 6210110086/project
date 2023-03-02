@@ -1,6 +1,7 @@
 import { route } from 'quasar/wrappers'
 import { createRouter, createMemoryHistory, createWebHistory, createWebHashHistory } from 'vue-router'
 import routes from './routes'
+// import firebase from 'firebase'
 
 export default route(function (/* { store, ssrContext } */) {
   const createHistory = process.env.SERVER
@@ -10,12 +11,23 @@ export default route(function (/* { store, ssrContext } */) {
   const Router = createRouter({
     scrollBehavior: () => ({ left: 0, top: 0 }),
     routes,
-
-    // Leave this as is and make changes in quasar.conf.js instead!
-    // quasar.conf.js -> build -> vueRouterMode
-    // quasar.conf.js -> build -> publicPath
     history: createHistory(process.env.MODE === 'ssr' ? void 0 : process.env.VUE_ROUTER_BASE)
   })
 
+  // const router = createRouter({
+  //   history: createWebHistory(process.env.BASE_URL),
+  //   routes
+  // })
+
+  // router.beforeEach((to, from, next) => {
+  //   const authenticatedUser = firebase.auth().currentUser
+  //   const requiresAuth = to.matched.some(record => record.meta.requiresAuth)
+  //   if (requiresAuth && !authenticatedUser) {
+  //     alert('You are not authorized to access this area.')
+  //     next('login')
+  //   } else {
+  //     next()
+  //   }
+  // })
   return Router
 })

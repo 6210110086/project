@@ -11,7 +11,7 @@
       <audio controls>
         <source src="~assets/audios/long_sound/อา.mp3" type="audio/mpeg">
       </audio>
-      <img src="~assets/vowel/อา.png">
+      <img src="https://firebasestorage.googleapis.com/v0/b/vark-7ea53.appspot.com/o/vowel%2F%E0%B8%AD%E0%B8%B2.png?alt=media&token=b1edc61b-919e-4b4f-ac91-3b98531a691a">
     </div>
   </div>
 

@@ -7,10 +7,10 @@
   <div class="fixed-center full-width">
     <div class="space-between">
       <div class="img-odo"><audio controls>
-        <source src="~assets/audios/กอ.mp3" type="audio/mpeg">
+        <source src="https://firebasestorage.googleapis.com/v0/b/vark-7ea53.appspot.com/o/audios%2F%E0%B8%81.mp3?alt=media&token=f698f9c1-0a25-494c-9479-10792b2f175a" type="audio/mpeg">
       </audio></div>
-      <div class="img-kai1"><img src="~assets/images/ก.png"></div>
-      <div class="img-kai2"><img src="~assets/images/ไก่เล็ก.png"></div>
+      <div class="img-kai1"><img src="https://firebasestorage.googleapis.com/v0/b/vark-7ea53.appspot.com/o/images%2F%E0%B8%81.png?alt=media&token=cf288e3b-3236-4e2c-a6a6-23916a5c26dd"></div>
+      <div class="img-kai2"><img src="https://firebasestorage.googleapis.com/v0/b/vark-7ea53.appspot.com/o/images%2F%E0%B9%84%E0%B8%81%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B9%87%E0%B8%81.png?alt=media&token=d8979336-cf3f-41cf-9d3f-d45eef26d920"></div>
     </div>
   </div>
  <router-link to="/4">

@@ -10,7 +10,9 @@
           aria-label="Menu"
           @click="toggleLeftDrawer"
         />
-
+        <q-avatar>
+            <img src="~assets/images/sun.jpg">
+          </q-avatar>
         <q-toolbar-title>
           Thai VARK
         </q-toolbar-title>

@@ -2,7 +2,6 @@
   <img src="~assets/images/wave.png" class="wave" alt="login-wave">
   <div class="row" style="height: 90vh">
     <div class="col-0 col-md-4 flex justify-center content-center">
-      <!-- <img src="~assets/images/wave4.png" class="responsive" alt="login-image"> -->
     </div>
     <div v-bind:class="{ 'justify-center': $q.screen.md || $q.screen.sm || $q.screen.xs }"
       class="col-12 col-md-6 flex content-center">
@@ -20,22 +19,34 @@
           </div>
         </q-card-section>
         <q-card-section>
-          <q-form class="q-gutter-md" @submit.prevent="submitForm">
-            <q-input label="ชื่อ-นามสกุล" v-model="login.username">
-            </q-input>
-            <q-input label="ชั้นเรียน"     v-model="login.username">
-            </q-input>
-            <q-input label="ชื่อผู้ใช้"     v-model="login.username">
-            </q-input>
-            <q-input label="รหัสผ่าน" type="password" v-model="login.password">
-            </q-input>
-            <div>
-              <q-btn class="full-width" color="primary" label="ลงทะเบียน" type="submit" rounded></q-btn>
-              <div class="text-center q-mt-sm q-gutter-lg">
-                <router-link class="text-dark" to="/login" @click="$router.replace('/Login')">มีบัญชีอยู่แล้ว?</router-link>
+          <!-- <form id="signup-form"> -->
+            <q-form class="q-gutter-md" @submit="onsubmit" @reset="onReset">
+
+              <b-form-group id = "name" label="ชื่อ-นามสกุล" type="Text" v-model="form.name">
+              <b-form-input
+                id="name"
+                v-model="form.name"
+                placeholder="Enter Name"
+                required>
+              </b-form-input>
+              </b-form-group >
+
+              <q-input label="ชั้นเรียน" type="Text" v-model="form.classuser">
+              </q-input>
+              <q-input label="ชื่อผู้ใช้" v-model="form.email">
+              </q-input>
+              <q-input label="รหัสผ่าน" type="password" v-model="form.password">
+              </q-input>
+              <div>
+                <br>
+                <q-btn class="full-width" color="primary" label="ลงทะเบียน" type="submit" rounded></q-btn>
+                <div class="text-center q-mt-sm q-gutter-lg">
+                  <router-link class="text-dark" to="/login"
+                    @click="$router.replace('/login')">มีบัญชีอยู่แล้ว?</router-link>
+                </div>
               </div>
-            </div>
-          </q-form>
+            </q-form>
+          <!-- </form> -->
         </q-card-section>
       </q-card>
     </div>
@@ -43,50 +54,50 @@
 </template>
 
 <script>
-import { useQuasar } from 'quasar'
-import { mapActions } from 'vuex'
-let $q
+// import { createObjectExpression } from "@vue/compiler-core";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  onAuthStateChanged,
+  updateProfile
+} from 'firebase/auth'
 export default {
-  name: 'Login',
   data () {
     return {
-      login: {
-        username: 'Joabson',
-        password: 'a2d4g6j8'
+      form: {
+        name: '',
+        classuser: '',
+        email: '',
+        password: ''
       }
     }
+  },
+  created () {
+    const auth = getAuth()
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        this.$router.push('/').catch(() => {})
+      }
+    })
   },
   methods: {
-    ...mapActions('auth', ['doLogin']),
-    async submitForm () {
-      if (!this.login.username || !this.login.password) {
-        $q.notify({
-          type: 'negative',
-          message: 'ข้อมูลที่ป้อนไม่ถูกต้อง'
+    onsubmit (event) {
+      event.preventDefault()
+      const auth = getAuth()
+      createUserWithEmailAndPassword(auth, this.form.email, this.form.password)
+        .then(async (userCredential) => {
+          await updateProfile(userCredential.user, { displayName: this.form.name })
+          this.$route.push('/').catch(() => {})
         })
-      } else if (this.login.password.length < 6) {
-        $q.notify({
-          type: 'negative',
-          message: 'รหัสผ่านต้องมีความยาวตั้งแต่ 6 ตัวอักษรขึ้นไป'
+        .catch((error) => {
+          alert(error.message)
         })
-      } else {
-        try {
-          await this.doLogin(this.login)
-          const toPath = this.$route.query.to || '/login'
-          this.$router.push(toPath)
-        } catch (err) {
-          if (err.response.data.detail) {
-            $q.notify({
-              type: 'negative',
-              message: err.response.data.detail
-            })
-          }
-        }
-      }
+    },
+    onReset (event) {
+      event.preventDefault()
+      this.form.email = ''
+      this.form.password = ''
     }
-  },
-  mounted () {
-    $q = useQuasar()
   }
 }
 </script>

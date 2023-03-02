@@ -79,7 +79,7 @@ import { store } from 'quasar/wrappers'
 import { createStore } from 'vuex'
 import { firebase } from 'boot/configFirebase.js'
 import { useRouter } from 'vue-router'
-import auth from './auth'
+// import auth from './auth'
 
 const actions = {
 
@@ -100,7 +100,7 @@ const actions = {
 export default store(function (/* { ssrContext } */) {
   const Store = createStore({
     modules: {
-      auth,
+      // auth,
       actions
     },
     strict: process.env.DEBUGGING

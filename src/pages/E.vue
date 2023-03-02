@@ -12,7 +12,7 @@
         <source src="~assets/audios/ฎ.mp3" type="audio/mpeg">
       </audio>
       <img
-        src="~assets/images/ฎ.jpg">
+        src="https://firebasestorage.googleapis.com/v0/b/vark-7ea53.appspot.com/o/images%2F%E0%B8%8E.png?alt=media&token=140e0e11-6dd9-4817-a020-c71c9b27d27e">
 
       <img src="~assets/images/ชฎา.jpg">
     </div>
