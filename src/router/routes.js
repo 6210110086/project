@@ -18,7 +18,7 @@ const routes = [
       // { path: 'logintest', component: () => import('pages/logintest.vue') },
       { path: 'Home', component: () => import('pages/Home.vue') },
       // { path: 'Signup', component: () => import('pages/Signup.vue') },
-      { path: 'test', component: () => import('pages/test.vue') },
+      // { path: 'draw', component: () => import('pages/draw.html') },
       { path: 'about', component: () => import('pages/about.vue') },
       { path: 'ข', component: () => import('pages/AboutMe.vue') },
       { path: 'E', component: () => import('pages/E.vue') },
@@ -52,6 +52,9 @@ const routes = [
       { path: 'ช', component: () => import('pages/=.vue') },
       { path: 'ซ', component: () => import('pages/sauzo.vue') },
       { path: 'ขา', component: () => import('pages/Mix_Qa.vue') },
+      { path: 'แกะ', component: () => import('pages/Mix_cdt.vue') },
+      { path: 'เกาะ', component: () => import('pages/Mix_gvkt.vue') },
+      { path: 'ถู', component: () => import('pages/Mix_56.vue') },
       { path: 'ModeCon2', component: () => import('pages/ModeCon2.vue') }
     ]
   },

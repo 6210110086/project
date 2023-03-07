@@ -12,7 +12,7 @@
         <source src="~assets/audios/ฃ.mp3" type="audio/mpeg">
       </audio>
       <img
-        src="https://firebasestorage.googleapis.com/v0/b/vark-7ea53.appspot.com/o/images%2F%E0%B8%83.png?alt=media&token=2ccc1250-ec3d-4cb7-847f-e0d097b016e1">
+        src="https://firebasestorage.googleapis.com/v0/b/project-b8cb4.appspot.com/o/images%2F%E0%B8%83.png?alt=media&token=84b1b148-013a-42e1-ae34-568b3c6362d4">
 
       <img src="~assets/images/ขวด.png">
     </div>

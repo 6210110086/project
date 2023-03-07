@@ -18,10 +18,7 @@
         </q-toolbar-title>
 
         <q-btn flat round dense icon="home" color="grey-1" @click="$router.replace('/')"/>
-
-        <li class="nav-item pr-4">
-                <router-link class="nav-link text-white" to="/login">Login</router-link>
-        </li>
+        <q-btn flat round dense icon="login" color="grey-1" @click="$router.replace('/login')"/>
       </q-toolbar>
     </q-header>
 

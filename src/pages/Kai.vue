@@ -1,8 +1,9 @@
 <template>
-  <img class="void-screen"
-    src="~assets/images/กระดาน.jpg">
+  <img class="void-screen" src="~assets/images/กระดาน2.jpg">
+  <div class="template">
   <div class="absolute-top text-center">
-    <br />
+    <br>
+        <h1  class="text-white">ฝึกอ่านออกเสียงพยัญชนะ</h1>
   </div>
   <div class="fixed-center full-width">
     <div class="space-between">
@@ -13,12 +14,11 @@
       <div class="img-kai2"><img src="https://firebasestorage.googleapis.com/v0/b/vark-7ea53.appspot.com/o/images%2F%E0%B9%84%E0%B8%81%E0%B9%88%E0%B9%80%E0%B8%A5%E0%B9%87%E0%B8%81.png?alt=media&token=d8979336-cf3f-41cf-9d3f-d45eef26d920"></div>
     </div>
   </div>
- <router-link to="/4">
   <div class="q-gutter-md row">
-    <q-btn color="primary" size="xl" label="NEXT" class="absolute-bottom-right"/></div></router-link>
-  <router-link to="/Consonant">
+    <q-btn color="secondary" size="xl" label="ถัดไป" class="absolute-bottom-right" @click="$router.replace('/4')"/></div>
     <div class="q-gutter-md row">
-      <q-btn color="primary" size="xl" class="absolute-bottom-left" label="BACK"/></div></router-link>
+      <q-btn color="secondary" size="xl" class="absolute-bottom-left" label="ย้อนกลับ" @click="$router.replace('/Consonant')"/></div>
+      </div>
 </template>
 
 <script>
@@ -37,3 +37,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.wave {
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+}
+</style>

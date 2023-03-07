@@ -1,31 +1,37 @@
-<template><div class="grid">
-  <img class="mode-screen"
-    src="~assets/images/หมวดหมู่การเรียนรู้.jpg">
-  <div class="absolute-top text-center">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="q-pa-md q-gutter-sm">
-    <q-btn color="orange-6" size="60px" @click="$router.replace('/Home')">
-      <div>
-        <q-icon name="book"></q-icon><br>การเรียนรู้</div></q-btn>
-    <q-btn color="primary" size="60px" @click="$router.replace('/about')">
-      <div><q-icon name="font_download"></q-icon><br>เกมวัดผล</div>
-    </q-btn>
+<template>
+  <div class="wave">
+    <img src="~assets/images/หมวดหมู่การเรียนรู้.jpg">
   </div>
+  <div class="template">
+    <div class="absolute-top text-center">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="q-pa-md q-gutter-sm">
+        <q-btn color="orange-6" size="60px" @click="$router.replace('/Home')">
+          <div>
+            <q-icon name="book"></q-icon><br>การเรียนรู้
+          </div>
+        </q-btn>
+        <br>
+        <br>
+        <q-btn color="primary" size="60px" @click="$router.replace('/about')">
+          <div><q-icon name="font_download"></q-icon><br>เกมวัดผล</div>
+        </q-btn>
       </div>
-      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -44,3 +50,10 @@ export default {
   }
 }
 </script>
+<style scoped>
+.wave {
+  position: fixed;
+  width: 100%;
+  height: 873px;
+  z-index: -1;
+}</style>

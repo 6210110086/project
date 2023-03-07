@@ -1,25 +1,12 @@
 <template>
-  <img class="con-screen"
-    src="~assets/images/พยัญชนะ.jpg">
+  <img class="con-screen" src="~assets/images/พื้นหลัง.png">
+  <div class="template">
   <div class="absolute-top text-center">
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+        <h1>พยัญชนะ</h1>
     <div class="space-between">
     <div class="q-pa-md q-gutter-sm">
     <q-btn class="consonant-screen"  color="orange-5" label="ก  ภ  ถ  ฎ  ฏ" size="100px" @click="$router.replace('/ก')">
-      <!-- <div>
-        กภถฎฏ
-      </div> -->
     </q-btn><br>
     <q-btn class="consonant-screen" color="orange-5" size="100px" @click="$router.replace('/ข')">
       <div>
@@ -29,13 +16,9 @@
   </div>
       </div>
     </div>
-    <!-- <div class="q-gutter-md row">
-      <q-btn color="primary" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/')" />
-    </div> -->
-
     <div class="q-gutter-md row">
-      <q-btn color="primary"  size="xl" class="absolute-bottom-left" label="BACK" @click="$router.replace('/Modecon')"/></div>
-
+      <q-btn color="secondary"  size="xl" class="absolute-bottom-left" label="ย้อนหลับ" @click="$router.replace('/Home')"/></div>
+</div>
 </template>
 
 <script>

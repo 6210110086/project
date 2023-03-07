@@ -1,5 +1,6 @@
 <template>
-  <img src="~assets/images/wave.png" class="wave" alt="login-wave">
+  <div  class="wave">
+  <img src="~assets/images/wave.png"  alt="login-wave"></div>
   <div class="row" style="height: 90vh">
     <div class="col-0 col-md-4 flex justify-center content-center">
     </div>

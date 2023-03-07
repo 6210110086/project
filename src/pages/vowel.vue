@@ -1,19 +1,9 @@
 <template>
-  <img class="vowel-screen"
-    src="~assets/images/สระ.jpg">
+ <div class="wave"><img src="~assets/images/พื้นหลัง.png"></div>
+ <div class="template">
   <div class="absolute-top text-center">
     <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+        <h1>สระ</h1>
     <div class="space-between">
     <div class="q-pa-md q-gutter-sm">
     <q-btn color="orange-5" size="100px" @click="$router.replace('/vowel_k')">
@@ -30,8 +20,8 @@
       </div>
     </div>
     <div class="q-gutter-md row">
-      <q-btn color="primary"  size="xl" class="absolute-bottom-left" label="BACK" @click="$router.replace('/Modevowel')"/></div>
-
+      <q-btn color="primary"  size="xl" class="absolute-bottom-left" label="BACK" @click="$router.replace('/Home')"/></div>
+</div>
 </template>
 
 <script>
@@ -50,3 +40,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.wave {
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+}
+</style>
