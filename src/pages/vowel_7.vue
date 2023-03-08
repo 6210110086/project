@@ -1,9 +1,9 @@
 <template>
-<img class="void-screen"
-src="~assets/images/กระดาน.jpg">
+ <img class="vowel-screen" src="~assets/images/กระดาน2.jpg">
+ <div class="template">
   <div class="absolute-top text-center">
-     <br />
-    <br />
+    <br>
+        <h1  class="text-white">ฝึกอ่านออกเสียงสระ</h1>
   </div>
   <div class="fixed-center full-width">
     <div class="space-between">
@@ -12,17 +12,17 @@ src="~assets/images/กระดาน.jpg">
         <source src="~assets/audios/short_sound/อึ.mp3" type="audio/mpeg">
       </audio>
       <img
-        src="~assets/vowel/สระอึ.jpg">
+        src="~assets/vowel/อึ.png">
     </div>
   </div>
 
   <div class="q-gutter-md row">
-      <q-btn color="primary" size="xl" class="absolute-bottom-left" label="BACK" @click="$router.replace('/vowel_b')"/></div>
+      <q-btn color="secondary" size="xl" class="absolute-bottom-left" label="ย้อนกลับ" @click="$router.replace('/vowel_b')"/></div>
 
   <div class="q-gutter-md row">
-    <q-btn color="primary" size="xl" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/เอะ')" />
+    <q-btn color="secondary" size="xl" label="ถัดไป" class="absolute-bottom-right" @click="$router.replace('/เอะ')" />
   </div>
-
+</div>
 </template>
 <script>
 export default {

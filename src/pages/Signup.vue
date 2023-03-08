@@ -1,6 +1,7 @@
 <template>
-  <div  class="wave">
-  <img src="~assets/images/wave.png"  alt="login-wave"></div>
+  <div class="wave">
+    <img src="~assets/images/wave.png" alt="login-wave">
+  </div>
   <div class="row" style="height: 90vh">
     <div class="col-0 col-md-4 flex justify-center content-center">
     </div>
@@ -20,86 +21,102 @@
           </div>
         </q-card-section>
         <q-card-section>
-          <!-- <form id="signup-form"> -->
-            <!-- <q-form class="q-gutter-md" @submit="onsubmit" @reset="onReset"> -->
+          <!-- <q-form class="q-gutter-md" @submit.prevent="submitForm"> -->
+          <!-- <p><input id="name" label="ชื่อ-นามสกุล" type="Text" v-model="name"/></p> -->
 
-              <b-form-group id = "name" label="ชื่อ-นามสกุล" type="Text" v-model="form.name">
-              <b-form-input
-                id="name"
-                v-model="form.name"
-                placeholder="Enter Name"
-                required>
-              </b-form-input>
-              </b-form-group >
-              <q-input id = "name" label="ชื่อ-นามสกุล" type="Text" v-model="form.name">
-              </q-input>
-              <q-input label="ชั้นเรียน" type="Text" v-model="form.classuser">
-              </q-input>
-              <q-input label="ชื่อผู้ใช้" v-model="form.email">
-              </q-input>
-              <q-input label="รหัสผ่าน" type="password" v-model="form.password">
-              </q-input>
-              <div>
-                <br>
-                <q-btn class="full-width" color="primary" label="ลงทะเบียน" type="submit" rounded></q-btn>
-                <div class="text-center q-mt-sm q-gutter-lg">
-                  <router-link class="text-dark" to="/login"
-                    @click="$router.replace('/login')">มีบัญชีอยู่แล้ว?</router-link>
-                </div>
-              </div>
-            <!-- </q-form> -->
-          <!-- </form> -->
+          <q-input id="name" label="ชื่อ-นามสกุล" type="Text" v-model="name">
+          </q-input>
+          <q-input label="ชั้นเรียน" type="Text" v-model="classuser">
+          </q-input>
+          <q-input label="ชื่อผู้ใช้" v-model="email">
+          </q-input>
+          <q-input label="รหัสผ่าน" type="password" v-model="password">
+          </q-input>
+          <div>
+            <br>
+            <q-btn class="full-width" color="primary" label="ลงทะเบียน" type="submit" rounded></q-btn>
+            <div class="text-center q-mt-sm q-gutter-lg">
+              <router-link class="text-dark" to="/login" @click="$router.replace('/login')">มีบัญชีอยู่แล้ว?</router-link>
+            </div>
+          </div>
+        <!-- </q-form> -->
         </q-card-section>
       </q-card>
     </div>
   </div>
 </template>
 
+<!-- <script>
+import { ref } from 'vue'
+import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth'
+import { useRoute } from 'vue-router'
+import { route } from 'quasar/wrappers'
+const name = ref('')
+const classuser = ref('')
+const email = ref('')
+const password = ref('')
+
+const sigup = () => {
+  createUserWithEmailAndPassword(getAuth(), email.value, password.value)
+    .then((data) => {
+      console.log('Successfully registered!')
+      route.push('/')
+    })
+    .catch((error) => {
+      console.log(error.code)
+      alert(error.message)
+    })
+}
+</script> -->
+
 <script>
-// import { createObjectExpression } from "@vue/compiler-core";
+// import { useQuasar } from 'quasar'
+// let $q
+
 import {
-// getAuth,
-// createUserWithEmailAndPassword,
-// onAuthStateChanged
-// updateProfile
+  getAuth,
+  createUserWithEmailAndPassword,
+  onAuthStateChanged,
+  updateProfile
 } from 'firebase/auth'
 export default {
   data () {
     return {
-      form: {
-        name: '',
-        classuser: '',
-        email: '',
-        password: ''
-      }
+      name: '',
+      classuser: '',
+      email: '',
+      password: ''
     }
   },
-  // created () {
-  //   const auth = getAuth()
-  //   onAuthStateChanged(auth, (user) => {
-  //     if (user) {
-  //       this.$router.push('/').catch(() => {})
-  //     }
-  //   })
-  // },
+  created () {
+    const auth = getAuth()
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        this.$router.push('/').catch(() => {})
+      }
+    })
+  },
   methods: {
-    // onsubmit (event) {
-    //   event.preventDefault()
-    //   const auth = getAuth()
-    //   createUserWithEmailAndPassword(auth, this.form.email, this.form.password)
-    //     .then(async (userCredential) => {
-    //       await updateProfile(userCredential.user, { displayName: this.form.name })
-    //       this.$route.push('/').catch(() => {})
-    //     })
-    //     .catch((error) => {
-    //       alert(error.message)
-    //     })
-    // },
-    // onReset (event) {
-    //   event.preventDefault()
-    //   this.form.email = ''
-    //   this.form.password = ''
-    // }
+    onsubmit (event) {
+      event.preventDefault()
+      const auth = getAuth()
+      createUserWithEmailAndPassword(auth, this.form.email, this.form.password)
+        .then(async (userCredential) => {
+          await updateProfile(userCredential.user, { displayName: this.form.name })
+          this.$route.push('/').catch(() => {})
+        })
+        .catch((error) => {
+          alert(error.message)
+        })
+    },
+    onReset (event) {
+      event.preventDefault()
+      this.form.email = ''
+      this.form.password = ''
+    }
+  },
+  mounted () {
+    // $q = useQuasar()
   }
 }
 </script>

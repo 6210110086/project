@@ -1,9 +1,9 @@
 <template>
-  <img class="void-screen"
-  src="~assets/images/กระดาน.jpg">
+  <img class="void-screen" src="~assets/images/กระดาน2.jpg">
+  <div class="template">
   <div class="absolute-top text-center">
-     <br />
-    <br />
+    <br>
+        <h1  class="text-white">ฝึกอ่านออกเสียงพยัญชนะ</h1>
   </div>
   <div class="fixed-center full-width">
     <div class="space-between">
@@ -14,15 +14,15 @@
       <img
         src="https://firebasestorage.googleapis.com/v0/b/vark-7ea53.appspot.com/o/images%2F%E0%B8%96.png?alt=media&token=29ccee77-c2cb-403a-a40f-f2e71fa487b3">
 
-      <img src="~assets/images/ถุง.jpg">
+      <img src="~assets/images/ถุง.png">
     </div>
   </div>
   <div class="q-gutter-md row">
-    <q-btn color="primary" size="xl" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/E')" />
+    <q-btn color="secondary" size="xl" label="ถัดไป" class="absolute-bottom-right" @click="$router.replace('/E')" />
   </div>
   <div class="q-gutter-md row">
-      <q-btn color="primary" size="xl" class="absolute-bottom-left" label="BACK" @click="$router.replace('/4')"/></div>
-
+      <q-btn color="secondary" size="xl" class="absolute-bottom-left" label="ย้อนกลับ" @click="$router.replace('/4')"/></div>
+</div>
 </template>
 
 <script>

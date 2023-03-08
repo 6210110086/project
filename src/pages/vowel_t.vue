@@ -17,10 +17,10 @@
   </div>
 
   <div class="q-gutter-md row">
-      <q-btn color="primary" size="xl" class="absolute-bottom-left" label="BACK" @click="$router.replace('/vowel')"/></div>
+      <q-btn color="secondary" size="xl" class="absolute-bottom-left" label="ย้อนกลับ" @click="$router.replace('/vowel')"/></div>
 
       <div class="q-gutter-md row">
-    <q-btn color="primary"  size="xl" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/vowel_6')" />
+    <q-btn color="secondary"  size="xl" label="ถัดไป" class="absolute-bottom-right" @click="$router.replace('/vowel_6')" />
   </div>
 </div>
 </template>

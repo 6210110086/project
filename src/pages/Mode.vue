@@ -1,23 +1,11 @@
 <template>
-  <div class="wave">
-    <img src="~assets/images/หมวดหมู่การเรียนรู้.jpg">
-  </div>
+  <div class="wave"><img src="~assets/images/พื้นหลัง.png"></div>
   <div class="template">
     <div class="absolute-top text-center">
       <br>
       <br>
       <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+        <h1>หมวดหมู่การเรียนรู้</h1>
       <div class="q-pa-md q-gutter-sm">
         <q-btn color="orange-6" size="60px" @click="$router.replace('/Home')">
           <div>

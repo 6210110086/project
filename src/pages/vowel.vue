@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="q-gutter-md row">
-      <q-btn color="primary"  size="xl" class="absolute-bottom-left" label="BACK" @click="$router.replace('/Home')"/></div>
+      <q-btn color="secondary"  size="xl" class="absolute-bottom-left" label="ย้อนกลับ" @click="$router.replace('/Home')"/></div>
 </div>
 </template>
 

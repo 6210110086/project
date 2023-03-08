@@ -1,9 +1,9 @@
 <template>
-  <img class="void-screen"
-    src="~assets/images/กระดาน.jpg">
+  <img class="vowel-screen" src="~assets/images/กระดาน2.jpg">
+  <div class="template">
   <div class="absolute-top text-center">
-     <br />
-    <br />
+    <br>
+        <h1  class="text-white">ฝึกอ่านออกเสียงประสมพยัญชนะกับสระ</h1>
   </div>
   <div class="fixed-center full-width">
     <div class="space-between">
@@ -12,17 +12,17 @@
         <source src="~assets/audios/เกาะ.mp3" type="audio/mpeg">
       </audio>
       <img
-        src="~assets/Mix/เกาะ1.png">
+        src="~assets/Mix/เกาะ2.png">
 
       <img src="~assets/images/เกาะ.png">
     </div>
   </div>
   <div class="q-gutter-md row">
-    <q-btn color="primary" size="xl" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/ถู')" />
+    <q-btn color="secondary" size="xl" label="ถัดไป" class="absolute-bottom-right" @click="$router.replace('/ถู')" />
   </div>
   <div class="q-gutter-md row">
-      <q-btn color="primary" size="xl" class="absolute-bottom-left" label="BACK" @click="$router.replace('/ขา')"/></div>
-
+      <q-btn color="secondary" size="xl" class="absolute-bottom-left" label="ย้อนกลับ" @click="$router.replace('/ขา')"/></div>
+</div>
 </template>
 
 <script>

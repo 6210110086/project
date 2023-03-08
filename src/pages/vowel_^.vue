@@ -1,8 +1,9 @@
 <template>
-  <img class="vowel-screen" src="~assets/images/กระดาน.jpg">
+<img class="vowel-screen" src="~assets/images/กระดาน2.jpg">
+<div class="template">
   <div class="absolute-top text-center">
-    <br />
-    <br />
+    <br>
+        <h1  class="text-white">ฝึกอ่านออกเสียงสระ</h1>
   </div>
   <div class="fixed-center full-width">
     <div class="space-between">
@@ -15,13 +16,13 @@
   </div>
 
   <div class="q-gutter-md row">
-    <q-btn color="primary" size="xl" class="absolute-bottom-left" label="BACK" @click="$router.replace('/vowel_n')" />
+    <q-btn color="secondary" size="xl" class="absolute-bottom-left" label="ย้อนกลับ" @click="$router.replace('/vowel_n')" />
   </div>
 
   <div class="q-gutter-md row">
-    <q-btn color="primary" size="xl" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/vowel_g')" />
+    <q-btn color="secondary" size="xl" label="ถัดไป" class="absolute-bottom-right" @click="$router.replace('/vowel_g')" />
   </div>
-
+</div>
 </template>
 
 <script>

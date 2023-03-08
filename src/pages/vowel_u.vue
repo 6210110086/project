@@ -1,27 +1,22 @@
 <template>
-  <!-- <q-responsive :ratio="16/9"> -->
-  <!-- <div :style="{'background-image':'url(https://vuejs.org/images/logo.png)'}"/> -->
-  <!-- <div class="space-between"> -->
-  <img class="vowel-screen" src="~assets/images/กระดาน.jpg">
-  <div :style="image">
-  <div class="container">
-    <div class="fixed-center full-width">
+ <img class="vowel-screen" src="~assets/images/กระดาน2.jpg">
+ <div class="template">
+    <div class="absolute-top text-center">
+      <br>
+        <h1  class="text-white">ฝึกอ่านออกเสียงสระ</h1>
       <div class="space-between">
         <audio controls><source src="~assets/audios/long_sound/อี.mp3" type="audio/mpeg"></audio>
         <img src="~assets/vowel/อี.png">
       </div>
     </div>
   </div>
-  <!-- </div> -->
   <div class="q-gutter-md row">
-    <q-btn color="primary" size="xl" class="absolute-bottom-left" label="BACK" @click="$router.replace('/vowel_k')" />
+    <q-btn color="secondary" size="xl" class="absolute-bottom-left" label="ย้อนกลับ" @click="$router.replace('/vowel_k')" />
   </div>
 
   <div class="q-gutter-md row">
-    <q-btn color="primary" size="xl" label="NEXT" class="absolute-bottom-right" @click="$router.replace('/vowel_n')" />
+    <q-btn color="secondary" size="xl" label="ถัดไป" class="absolute-bottom-right" @click="$router.replace('/vowel_n')" />
   </div>
-</div>
-  <!-- </q-responsive> -->
 </template>
 
 <script>

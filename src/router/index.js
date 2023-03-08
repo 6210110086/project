@@ -15,6 +15,14 @@ export default route(function (/* { store, ssrContext } */) {
   })
 
   // const router = createRouter({
+  //   history: createWebHistory(),
+  //   routes: [
+  //     { path: '/signup', component: () => import('pages/Signup.vue') },
+  //     { path: '/login', component: () => import('pages/Login.vue') }
+  //   ]
+  // })
+
+  // const router = createRouter({
   //   history: createWebHistory(process.env.BASE_URL),
   //   routes
   // })
