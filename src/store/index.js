@@ -73,38 +73,38 @@
 // export default {
 //   state,
 //   actions
+// // }
+
+// import { store } from 'quasar/wrappers'
+// import { createStore } from 'vuex'
+// import { firebase } from 'boot/configFirebase.js'
+// import { useRouter } from 'vue-router'
+// // import auth from './auth'
+
+// const actions = {
+
+//   handleAuthStateChanged () {
+//     const router = useRouter()
+
+//     firebase.auth().onAuthStateChanged((user) => {
+//       if (user) {
+//         console.log('Activo')
+//         router.push('/')
+//       } else {
+//         router.push('/login')
+//       }
+//     })
+//   }
 // }
 
-import { store } from 'quasar/wrappers'
-import { createStore } from 'vuex'
-import { firebase } from 'boot/configFirebase.js'
-import { useRouter } from 'vue-router'
-// import auth from './auth'
+// export default store(function (/* { ssrContext } */) {
+//   const Store = createStore({
+//     modules: {
+//       // auth,
+//       actions
+//     },
+//     strict: process.env.DEBUGGING
+//   })
 
-const actions = {
-
-  handleAuthStateChanged () {
-    const router = useRouter()
-
-    firebase.auth().onAuthStateChanged((user) => {
-      if (user) {
-        console.log('Activo')
-        router.push('/')
-      } else {
-        router.push('/login')
-      }
-    })
-  }
-}
-
-export default store(function (/* { ssrContext } */) {
-  const Store = createStore({
-    modules: {
-      // auth,
-      actions
-    },
-    strict: process.env.DEBUGGING
-  })
-
-  return Store
-})
+//   return Store
+// })

@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="wave">
     <img src="~assets/images/wave.png" alt="login-wave">
   </div>
@@ -21,8 +21,8 @@
           </div>
         </q-card-section>
         <q-card-section>
-          <!-- <q-form class="q-gutter-md" @submit.prevent="submitForm"> -->
-          <!-- <p><input id="name" label="ชื่อ-นามสกุล" type="Text" v-model="name"/></p> -->
+          <q-form class="q-gutter-md" @submit.prevent="submitForm">
+          <p><input id="name" label="ชื่อ-นามสกุล" type="Text" v-model="name"/></p>
 
           <q-input id="name" label="ชื่อ-นามสกุล" type="Text" v-model="name">
           </q-input>
@@ -39,12 +39,12 @@
               <router-link class="text-dark" to="/login" @click="$router.replace('/login')">มีบัญชีอยู่แล้ว?</router-link>
             </div>
           </div>
-        <!-- </q-form> -->
+        </q-form>
         </q-card-section>
       </q-card>
     </div>
   </div>
-</template>
+</template> -->
 
 <!-- <script>
 import { ref } from 'vue'
@@ -68,7 +68,7 @@ const sigup = () => {
     })
 }
 </script> -->
-
+<!--
 <script>
 // import { useQuasar } from 'quasar'
 // let $q
@@ -119,7 +119,7 @@ export default {
     // $q = useQuasar()
   }
 }
-</script>
+</script> -->
 
 <style scoped>
 .wave {

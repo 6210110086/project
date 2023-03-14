@@ -3,57 +3,34 @@
   <div class="template">
     <div class="absolute-top text-center">
       <br>
-        <h1>บทเรียน</h1>
+        <h1>บทเรียนฝึกอ่านออกเสียง</h1>
         <div class="q-pa-md q-gutter-sm">
-          <q-btn color="orange-5" size="60px"><div class="Home-screen2">
+          <q-btn  color="orange-5" size="100px" @click="$router.replace('/Consonant')">
+            <div class="Home-screen2">
               ก
-            <h5>พยัญชนะไทย</h5> </div>
-            <q-card-section horizontal>
-          <q-card-actions vertical class="justify-around q-px-md">
-            <q-btn color="brown-6" label="ฝึกอ่านออกเสียงพยัญชนะ" size="20px"
-              @click="$router.replace('/Consonant')"></q-btn>
-              <br>
-            <q-btn color="brown-6" label="ฝึกเขียนพยัญชนะ" size="20px" @click="$router.replace('/AboutMe')"></q-btn>
-          </q-card-actions>
-        </q-card-section>
+            <br>
+            <h5>พยัญชนะไทย</h5></div>
           </q-btn>
         <br>
-        <q-btn color="orange-5" size="60px">
-          <div class="Home-screen1">
+        <q-btn color="orange-5" size="100px"  @click="$router.replace('/vowel')">
+          <div class="Home-screen2">
             -า
             <br>
             <h5>สระ</h5>
           </div>
-          <q-card-section horizontal>
-          <q-card-actions vertical class="justify-around q-px-md">
-            <q-btn color="brown-6" label="ฝึกอ่านออกเสียงสระ" size="20px"
-              @click="$router.replace('/vowel')"></q-btn>
-              <br>
-            <q-btn color="brown-6" label="ฝึกเขียนสระ" size="20px" @click="$router.replace('/AboutMe')"></q-btn>
-          </q-card-actions>
-        </q-card-section>
         </q-btn>
         <br>
-        <q-btn color="orange-5" size="60px">
-          <div class="Home-screen">
+        <q-btn color="orange-5" size="100px" @click="$router.replace('/ขา')">
+          <div class="Home-screen2">
             ก-า
             <br>
             <h5>ประสมพยัญชนะกับสระ</h5>
           </div>
-          <q-card-section horizontal>
-          <q-card-actions vertical class="justify-around q-px-md">
-            <q-btn color="brown-6" label="ฝึกอ่านออกเสียงประสมพยัญชนะกับสระ" size="20px"
-              @click="$router.replace('/ขา')"></q-btn>
-              <br>
-            <q-btn color="brown-6" label="ฝึกเขียนประสมพยัญชนะกับสระ" size="20px" @click="$router.replace('/AboutMe')"></q-btn>
-          </q-card-actions>
-        </q-card-section>
         </q-btn>
-      </div>
-    </div>
-    <div class="q-gutter-md row">
+      </div><div class="q-gutter-md row">
         <q-btn color="secondary" size="xl" class="absolute-bottom-left" label="ย้อนกลับ" @click="$router.replace('/')" />
       </div>
+    </div>
   </div>
 </template>
 

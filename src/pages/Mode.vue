@@ -6,17 +6,18 @@
       <br>
       <br>
         <h1>หมวดหมู่การเรียนรู้</h1>
+      <br>
+      <br>
+      <br>
       <div class="q-pa-md q-gutter-sm">
         <q-btn color="orange-6" size="60px" @click="$router.replace('/Home')">
           <div>
             <q-icon name="book"></q-icon><br>การเรียนรู้
           </div>
         </q-btn>
-        <br>
-        <br>
-        <q-btn color="primary" size="60px" @click="$router.replace('/about')">
+        <!-- <q-btn color="primary" size="60px" @click="$router.replace('/about')">
           <div><q-icon name="font_download"></q-icon><br>เกมวัดผล</div>
-        </q-btn>
+        </q-btn> -->
       </div>
     </div>
   </div>
