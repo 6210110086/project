@@ -13,29 +13,5 @@ export default route(function (/* { store, ssrContext } */) {
     routes,
     history: createHistory(process.env.MODE === 'ssr' ? void 0 : process.env.VUE_ROUTER_BASE)
   })
-
-  // const router = createRouter({
-  //   history: createWebHistory(),
-  //   routes: [
-  //     { path: '/signup', component: () => import('pages/Signup.vue') },
-  //     { path: '/login', component: () => import('pages/Login.vue') }
-  //   ]
-  // })
-
-  // const router = createRouter({
-  //   history: createWebHistory(process.env.BASE_URL),
-  //   routes
-  // })
-
-  // router.beforeEach((to, from, next) => {
-  //   const authenticatedUser = firebase.auth().currentUser
-  //   const requiresAuth = to.matched.some(record => record.meta.requiresAuth)
-  //   if (requiresAuth && !authenticatedUser) {
-  //     alert('You are not authorized to access this area.')
-  //     next('login')
-  //   } else {
-  //     next()
-  //   }
-  // })
   return Router
 })
