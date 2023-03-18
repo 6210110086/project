@@ -21,7 +21,7 @@
       <q-btn color="secondary" size="xl" class="absolute-bottom-left" label="ย้อนกลับ" @click="$router.replace('/แอะ')"/></div>
 
       <div class="q-gutter-md row">
-    <q-btn color="secondary"  size="xl" label="ถัดไป" class="absolute-bottom-right" @click="$router.replace('/vowel_t')" />
+    <q-btn color="secondary"  size="xl" label="ถัดไป" class="absolute-bottom-right" @click="$router.replace('/vowel')" />
   </div>
 </div>
 </template>

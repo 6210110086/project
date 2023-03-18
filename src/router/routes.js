@@ -1,24 +1,10 @@
 const routes = [
   {
-    path: '/login',
-    component: () => import('pages/Login.vue')
-    // path: 'Signup', component: () => import('pages/Signup.vue')
-
-  },
-  {
-    path: '/signup',
-    component: () => import('pages/Signup.vue')
-
-  },
-  {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Mode.vue') },
-      // { path: 'logintest', component: () => import('pages/logintest.vue') },
       { path: 'Home', component: () => import('pages/Home.vue') },
-      // { path: 'Signup', component: () => import('pages/Signup.vue') },
-      // { path: 'draw', component: () => import('pages/draw.html') },
       { path: 'about', component: () => import('pages/about.vue') },
       { path: 'ข', component: () => import('pages/AboutMe.vue') },
       { path: 'E', component: () => import('pages/E.vue') },

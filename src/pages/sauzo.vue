@@ -23,7 +23,7 @@
       <q-btn color="secondary" size="xl" class="absolute-bottom-left" label="ย้อนกลับ" @click="$router.replace('/ช')"/></div>
 
 <div class="q-gutter-md row">
-    <q-btn color="secondary" size="xl" label="ถัดไป" class="absolute-bottom-right" @click="$router.replace('/ข')" />
+    <q-btn color="secondary" size="xl" label="ถัดไป" class="absolute-bottom-right" @click="$router.replace('/Consonant')" />
   </div></div>
 </template>
 

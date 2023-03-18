@@ -18,7 +18,7 @@
         </q-toolbar-title>
 
         <q-btn flat round dense icon="home" color="grey-1" @click="$router.replace('/')"/>
-        <q-btn flat round dense icon="login" color="grey-1" @click="$router.replace('/login')"/>
+        <!-- <q-btn flat round dense icon="login" color="grey-1" @click="$router.replace('/login')"/> -->
       </q-toolbar>
     </q-header>
 
@@ -62,12 +62,6 @@ const linksList = [
     caption: 'Learning mode',
     icon: 'book',
     link: 'http://localhost:8080/#/Home'
-  },
-  {
-    title: 'โหมดเกมวัดผล',
-    caption: 'Game mode',
-    icon: 'chat',
-    link: 'https://chat.quasar.dev'
   },
   {
     title: 'เกี่ยวกับ',
