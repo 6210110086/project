@@ -11,7 +11,6 @@
             <br>
             <h5>พยัญชนะไทย</h5></div>
           </q-btn>
-        <br>
         <q-btn color="orange-5" size="100px"  @click="$router.replace('/vowel')">
           <div class="Home-screen2">
             -า
@@ -19,7 +18,6 @@
             <h5>สระ</h5>
           </div>
         </q-btn>
-        <br>
         <q-btn color="orange-5" size="100px" @click="$router.replace('/ขา')">
           <div class="Home-screen2">
             ก-า
@@ -27,10 +25,10 @@
             <h5>ประสมพยัญชนะกับสระ</h5>
           </div>
         </q-btn>
-      </div><div class="q-gutter-md row">
+      </div>
+    </div><div class="q-gutter-md row">
         <q-btn color="secondary" size="xl" class="absolute-bottom-left" label="ย้อนกลับ" @click="$router.replace('/')" />
       </div>
-    </div>
   </div>
 </template>
 
