@@ -15,9 +15,18 @@
             <q-icon name="book"></q-icon><br>การเรียนรู้
           </div>
         </q-btn>
-        <!-- <q-btn color="primary" size="60px" @click="$router.replace('/about')">
-          <div><q-icon name="font_download"></q-icon><br>เกมวัดผล</div>
-        </q-btn> -->
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    <q-btn color="primary" size="30px" @click="$router.replace('/about')">
+          <div>กลับหน้าหลัก</div>
+        </q-btn>
       </div>
     </div>
   </div>

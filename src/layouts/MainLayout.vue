@@ -55,19 +55,13 @@ const linksList = [
     title: 'หน้าหลัก',
     caption: 'Home',
     icon: 'home',
-    link: 'http://localhost:8080/#/'
+    link: 'https://project-vark.netlify.app/#/'
   },
   {
     title: 'โหมดการเรียนรู้',
     caption: 'Learning mode',
     icon: 'book',
-    link: 'http://localhost:8080/#/Home'
-  },
-  {
-    title: 'เกี่ยวกับ',
-    caption: 'AboutMe',
-    icon: 'record_voice_over',
-    link: 'http://localhost:8080/#/about'
+    link: 'https://project-vark.netlify.app/#/Home'
   }
 ]
 
